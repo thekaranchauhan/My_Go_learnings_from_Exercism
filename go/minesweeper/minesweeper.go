@@ -6,6 +6,7 @@ func isCellInside(r, c int, board *[]string) bool {
 
 // Annotate returns an annotated board
 func Annotate(board []string) []string {
+
 	for row := range board {
 		cells := []rune(board[row])
 		for col := range cells {
@@ -28,5 +29,6 @@ func Annotate(board []string) []string {
 		}
 		board[row] = string(cells)
 	}
+
 	return board
 }
